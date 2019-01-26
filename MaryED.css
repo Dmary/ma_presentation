@@ -1,0 +1,309 @@
+/* CSS de la page principale Mary_ED*/
+@font-face
+{
+    font-family: 'open_sansregular';
+    src: url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'fira_sans_condensedbook';
+    src: url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.eot');
+    src: url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.woff2') format('woff2'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.woff') format('woff'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.ttf') format('truetype'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.svg#fira_sans_condensedbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*Elements principaux de la page*/
+body
+{
+	font-family: 'open_sansregular', serif;
+	background-image: url("images/fondb3.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #181818
+}
+
+#bloc-page
+{
+	width: 900px;
+	margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'fira_sans_condensedbook', serif;
+	text-transform: uppercase;
+}
+
+p
+{
+	text-align: justify;
+}
+
+img
+{
+	border-radius: 5px;
+}
+
+
+/*Header*/
+header
+{
+	display: flex;
+	margin: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	justify-content: space-between;
+	align-items: flex-end;
+	box-shadow: 0px 4px 4px #1c1a19;
+}
+
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 59px;
+	height: 60px;
+}
+
+header h1
+{
+    font-family: 'open_sansregular', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+	font-family: 'fira_sans_condensedbook', serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+
+/*Navigation*/
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{ 
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+
+/*Bannière*/
+#banniere_image
+{
+	position: relative;
+	margin: 48px;
+	height: 380px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #1c1a19;
+}
+
+.computer
+{
+	width: 100%; /*width à 100% et height à 100% pour que l'image prenne toute la largeur de la bannière*/
+	height: 100%;
+}
+
+#tiban
+{
+	position: absolute;
+	font-size: x-large;
+	height: 25px;
+	right: 120px;
+	top: -15px;
+}
+
+#banniere_description
+{
+	position: absolute; /*bannière qui sera positionnée par dessus le reste des éléments de la page grâce à position: absolute;*/
+	bottom: 0;
+	border-radius: 0px 0px 5px 5px;
+	width: 99.7%;
+	height: 33px;
+	padding-top: 18px;
+	padding-left: 4px;
+	background-color: rgba(24,24,24,0.8);
+	color: white;
+}
+
+.bouton_blanc
+{
+	height: 25px;
+	position: absolute;
+	right: 5px;
+	bottom: 20px;
+	padding: 3px 8px 0px 8px;
+}
+
+
+/*Le corps*/
+section
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+h1, h2, h3
+{
+    font-family: 'fira_sans_condensedbook';
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
+
+h4
+{
+	font-family: 'open_sansregular', serif;
+    font-size: 1em;
+}
+
+article
+{
+	background-color: #353540;
+	flex: 1;
+	float: right;
+	width: 350px;
+	height: 900px;
+	border: 1px solid black;
+	border-radius: 5px 5px 5px 5px;
+	margin: 20px 50px 20px 50px;
+	padding: 10px 30px 30px 30px;
+	color: white;
+}
+
+article h3
+{
+	text-align: center;
+	font-size: large;
+}
+
+
+#invit
+{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.lienface
+{
+	display: block;
+	margin: auto;
+    width: 20px;
+
+}
+
+
+aside
+{
+	margin-left: 50px;
+	flex: 3;
+}
+
+aside p
+{
+	display: block;
+	width: 700px;
+}
+
+aside
+img
+{
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-left: 400px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+
+.interets
+{
+	position: relative;
+	margin-left: 75px;
+}
+
+.clic
+{
+	position: absolute;
+	right: 100px;
+	bottom: 15px;
+}
+
+/*footer*/
+footer
+{
+	padding-top: 25px;
+	border-radius: 5px;
+	color: white;
+	width: 1400px;
+	margin: auto;
+}
+
+footer h3
+
+{
+	background-color: #434343;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border: 1px solid #696969;
+	border-radius:  5px;
+}
+
+#conteneur
+{
+    display: flex;
+    margin: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+

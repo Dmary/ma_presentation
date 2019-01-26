@@ -1,0 +1,249 @@
+/* CSS de la page cvweb*/
+@font-face
+{
+    font-family: 'open_sansregular';
+    src: url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/web fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'fira_sans_condensedbook';
+    src: url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.eot');
+    src: url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.woff2') format('woff2'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.woff') format('woff'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.ttf') format('truetype'),
+         url('fonts/Fira/firasanscondensed_book_macroman/FiraSansCondensed-Book-webfont.svg#fira_sans_condensedbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*Elements principaux de la page*/
+body
+{
+    font-family: 'open_sansregular', serif;
+    background-image: url("images/fondb3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #181818
+}
+
+#bloc-page
+{
+    width: 900px;
+    margin: auto;
+}
+
+nav a
+{
+    font-family: 'fira_sans_condensedbook', serif;
+    text-transform: uppercase;
+}
+
+p
+{
+    text-align: justify;
+}
+
+img
+{
+    border-radius: 5px;
+}
+
+
+/*Header*/
+header
+{
+    display: flex;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0px 4px 4px #2b4d84;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'open_sansregular', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+
+/*Navigation*/
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+
+nav li
+{ 
+    margin-right: 15px;
+}
+
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/*corps*/
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+aside
+{
+    background-color: #2b4d84;
+    box-shadow: 0px 4px 4px #2b4d84;
+    flex: 1.2;
+    float: left;
+    width: 350px;
+    height: 965px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    margin: 75px 20px 20px 50px;
+    padding: 20px 30px 30px 30px;
+    color: white;
+}
+
+
+#imagecv
+img
+{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     box-shadow: 0px 4px 4px #1c1a19;
+}
+
+.contact
+{
+    width: 300px;
+    display: block;
+    margin: 10px;
+    border-bottom: 2px solid white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 35px 10px 10px;
+}
+
+.adresse
+{
+    text-indent: 55px;
+}
+
+article
+{
+    margin-right: 35px;
+    flex: 3;
+}
+
+#images img
+{
+    margin-bottom: -15px;
+}
+
+article h2
+{
+    color: #2b4d84;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+div ul
+{
+    list-style-type: none;
+}
+
+aside img
+{
+    box-shadow: 0px 4px 4px #2b4d84;
+}
+
+div ol
+{
+    list-style-type: none;
+    font-style: normal;
+    text-indent: 16px;
+}
+
+#experience
+{
+    width: 880px;
+    display: block;
+    margin: 10px 80px 40px 20px;
+    padding: 30px 50px 25px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    list-style-type: none;
+    box-shadow: 0px 4px 4px #2b4d84;
+}
+
+#experience li
+{
+    text-transform: uppercase;
+}
+
+p strong
+{
+    text-transform: uppercase;
+}
+
+.formation
+{
+    width: 920px;
+    display: block;
+    margin: 10px 20px 40px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px 10px 25px 20px;
+    box-shadow: 0px 4px 4px #2b4d84;
+    list-style-type: none;
+}
+

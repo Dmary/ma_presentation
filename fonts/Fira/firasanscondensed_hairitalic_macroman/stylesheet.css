@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'fira_sans_condensedhairIt';
+    src: url('FiraSansCondensed-HairItalic-webfont.eot');
+    src: url('FiraSansCondensed-HairItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('FiraSansCondensed-HairItalic-webfont.woff2') format('woff2'),
+         url('FiraSansCondensed-HairItalic-webfont.woff') format('woff'),
+         url('FiraSansCondensed-HairItalic-webfont.ttf') format('truetype'),
+         url('FiraSansCondensed-HairItalic-webfont.svg#fira_sans_condensedhairIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
